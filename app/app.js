@@ -9,3 +9,4 @@ app.listen(port, () => {
     console.log(`Server connected on port: ${port}`)
 })
 
+module.exports = app;
