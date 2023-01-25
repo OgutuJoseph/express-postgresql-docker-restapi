@@ -1,7 +1,7 @@
 version: '3'
 services: 
   postgres: 
-    image: 'postgres:14'
+    image: 'postgres:15'
     restart: 'always'
     environment:
       - POSTGRES_USER
@@ -15,7 +15,7 @@ services:
     volumes:
       - ./app:/app
     ports: 
-      - '3000:3000'
+      - '5002:5002'
     depends_on:
       - 'postgres'
     environment:
