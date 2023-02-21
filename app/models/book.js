@@ -61,7 +61,7 @@ function makeValidation(attribute, value) {
         case 'price':
             validate (typeof value !== 'number' || value.length < 0, 'Price must be of type number and greater than zero')
             break
-        case 'dscription':
+        case 'description':
             validate (value !== undefined && typeof value !== 'string', 'Description must be of type string if exists')
             break
         case 'year_published':
@@ -80,7 +80,7 @@ async function addBook({ id, author, price, description, year_published }){
     makeValidation('description', description);
     makeValidation('year_published', year_published);
 
-    let resp;
+    let resp
     try {
         resp = await client.query(`
             INSERT INTO book (${insertBookAttributes})
@@ -91,7 +91,7 @@ async function addBook({ id, author, price, description, year_published }){
         return undefined;
     };
 
-    return resp;
+    return resp
 };
 
 /** Update book */
@@ -142,10 +142,10 @@ async function deleteBook({ bookId }){
     return resp;
 };
 
-modules.exports = {
+module.exports = {
     getBooks,
     getBook,
     addBook,
     updateBook,
     deleteBook
-}
+};
