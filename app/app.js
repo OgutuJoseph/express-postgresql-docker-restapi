@@ -15,6 +15,7 @@ app.use(express.json());
 /** Routes */
 app.listen(port, () => {
     console.log(`Server has started on port: ${port}`)
+    console.log('hi')
 });
 
 module.exports = app;
