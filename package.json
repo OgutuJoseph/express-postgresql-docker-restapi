@@ -1,0 +1,29 @@
+{
+  "name": "express-docker-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OgutuJoseph/express-postgresql-docker-restapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OgutuJoseph/express-postgresql-docker-restapi/issues"
+  },
+  "homepage": "https://github.com/OgutuJoseph/express-postgresql-docker-restapi#readme",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
