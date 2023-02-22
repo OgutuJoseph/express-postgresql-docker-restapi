@@ -6,6 +6,9 @@ dotenv.config();
 const port = process.env.PORT || 5002;
 
 /** Middlewares */
+// to see bodies of requests that come
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 /** Routers */
 
